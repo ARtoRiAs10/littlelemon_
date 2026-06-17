@@ -1,7 +1,7 @@
-Little Lemon Restaurant – Back-End Capstone Project
+## Little Lemon Restaurant – Back-End Capstone Project
 =====================================================
 
-SETUP INSTRUCTIONS
+### SETUP INSTRUCTIONS
 ------------------
 1. Clone the repository:
    git clone <your-repo-url>
