@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Restaurant</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="logo">🍋 Little Lemon</h1>
+            <nav>
+                <a href="/restaurant/">Home</a>
+                <a href="/restaurant/menu/">Menu API</a>
+                <a href="/restaurant/booking/">Bookings API</a>
+                <a href="/admin/">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Little Lemon</h2>
+            <p>A family-owned Mediterranean restaurant focused on<br>traditional recipes with a modern twist.</p>
+            <a href="/restaurant/menu/" class="btn">View Our Menu</a>
+            <a href="/restaurant/booking/" class="btn btn-outline">Book a Table</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails
+                in a lively but casual environment. The restaurant features a locally-sourced menu with
+                Mediterranean influences and an extensive list of craft beers and wines.
+            </p>
+        </div>
+    </section>
+
+    <section class="api-info">
+        <div class="container">
+            <h2>API Endpoints</h2>
+            <div class="endpoint-grid">
+                <div class="endpoint-card">
+                    <h3>🍽️ Menu API</h3>
+                    <code>GET  /restaurant/menu/</code>
+                    <code>POST /restaurant/menu/</code>
+                    <code>GET  /restaurant/menu/&lt;id&gt;/</code>
+                    <code>PUT  /restaurant/menu/&lt;id&gt;/</code>
+                    <code>DEL  /restaurant/menu/&lt;id&gt;/</code>
+                </div>
+                <div class="endpoint-card">
+                    <h3>📅 Booking API</h3>
+                    <code>GET  /restaurant/booking/</code>
+                    <code>POST /restaurant/booking/</code>
+                    <code>GET  /restaurant/booking/&lt;id&gt;/</code>
+                    <code>PUT  /restaurant/booking/&lt;id&gt;/</code>
+                    <code>DEL  /restaurant/booking/&lt;id&gt;/</code>
+                </div>
+                <div class="endpoint-card">
+                    <h3>🔐 Auth API</h3>
+                    <code>POST /auth/users/</code>
+                    <code>POST /auth/token/login/</code>
+                    <code>POST /auth/token/logout/</code>
+                    <code>GET  /restaurant/users/me/</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Little Lemon Restaurant · Chicago, Illinois</p>
+    </footer>
+</body>
+</html>
