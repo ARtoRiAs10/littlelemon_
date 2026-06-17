@@ -1,5 +1,4 @@
 ## Little Lemon Restaurant – Back-End Capstone Project
-=====================================================
 
 ### SETUP INSTRUCTIONS
 ------------------
